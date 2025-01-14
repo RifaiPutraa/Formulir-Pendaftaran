@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="an">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="biodata siswa.css">
+      <title>Biodata Siswa</title>
+   </head>
+   <body>
+      <h2>Biodata Siswa</h2>
+
+      <form>
+         <div>
+            <label for="fullName">Nama Lengkap</label><br />
+            <input id="fullName" name="fullName" placeholder="Masukan Nama Lengkap" type="text" required />
+         </div>
+
+         <div>
+            <label for="alamat">Alamat</label><br />
+            <textarea id="alamat" name="alamat" placeholder="Masukan Alamat" rows="4" cols="50" required></textarea>
+         </div>
+
+         <div>
+            <label for="tempatLahir">Tempat Lahir</label><br />
+            <input id="tempatLahir" name="tempatLahir" placeholder="Masukan Tempat Lahir" type="text" required />
+         </div>
+
+         <div>
+            <label for="tanggalLahir">Tanggal Lahir</label><br />
+            <input id="tanggalLahir" name="tanggalLahir" type="date" required />
+         </div>
+
+         <div>
+            <label>Jenis Kelamin</label><br />
+            <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-laki" required />
+            <label for="lakiLaki">Laki-laki</label><br />
+            <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan" required />
+            <label for="perempuan">Perempuan</label>
+         </div>
+
+         <div>
+            <label for="hobi">Hobi</label><br />
+            <input type="checkbox" id="hobiMembaca" name="hobi" value="Membaca" />
+            <label for="hobiMembaca">Membaca</label><br />
+            <input type="checkbox" id="hobiTraveling" name="hobi" value="Traveling" />
+            <label for="hobiTraveling">Traveling</label><br />
+            <input type="checkbox" id="hobiMenulis" name="hobi" value="Menulis" />
+            <label for="hobiMenulis">Menulis</label>
+         </div>
+
+         <div>
+            <label for="kelas">Kelas</label><br />
+            <select id="kelas" name="kelas" required>
+               <option value="X PPLG 1">X PPLG 1</option>
+               <option value="X PPLG 2">X PPLG 2</option>
+            </select>
+         </div>
+
+         <div class="remember-me"><br />
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Remember Me</label>
+         </div>
+
+         <br />
+         <button type="submit">Submit</button>
+      </form>
+   </body>
+</html>
